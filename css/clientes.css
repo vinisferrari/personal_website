@@ -1,0 +1,200 @@
+.clientes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 7.5vw;
+    background-color: transparent;
+    font-family: 'Arial', sans-serif;
+    color: #FFF;
+}
+
+.clientes .background-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    background-image: url(/Design/backgorund_image/Section_clientes_background.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+@media (max-width: 1000px){
+    .clientes .background-image{
+        background-position: 90% center; 
+    }
+}
+
+.clientes h1 {
+    z-index: 1;
+    color: #FFF;
+    font-size: clamp(20px, 3vw, 36px);
+    text-align: center;
+    margin-bottom: clamp(10px, 1vw, 30px);
+}
+
+.clientes h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #ff2100 30%, #ff2100 60%, rgba(0,0,0,1) 100%);
+    opacity: 1;
+    margin: 15px 0 25px;
+}
+
+.clientes .container-general {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 4vw;
+    width: 100%;
+    justify-content: center;
+    z-index: 1;
+}
+
+.clientes .card-column {
+    display: flex;
+    flex-direction: column;
+    /* width: calc(50% - 2vw); */
+    align-items: center;
+    width: 60%;
+}
+
+.clientes .card-column, .clientes .image-column {
+    /* flex: 1; */
+}
+
+.clientes .card {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 1vw;
+    align-items: center;
+    width: 100%;
+}
+
+.clientes .card:not(:last-child)::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%,#ff9d64 50%, rgba(0,0,0,1) 100%);
+    opacity: 1;
+    margin: 25px 0;
+}
+
+.clientes .card:last-child{
+margin-bottom: 25px;
+}
+
+.clientes .card-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    align-items: center;
+    padding: 1vw;
+    width: 100%;
+}
+
+.clientes .image-container {
+    display: flex;
+    align-items: center;
+}
+
+.clientes .card-content svg {
+    width: clamp(70px,10vw,250px);
+    transition: transform 0.3s ease;
+    
+}
+
+.clientes .card-subject {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.clientes h2 {
+    width: 100%;
+    color: #FFF;
+    font-size: clamp(20px, 2vw, 38px);
+    margin: 0;
+}
+
+.clientes h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #fff3eb 70%, rgba(0,0,0,0) 100%);
+    opacity: 1;
+    margin: 15px 0 5px;
+    
+}
+
+.clientes .card p {
+    text-align: left;
+    font-size: clamp(16px, 1.2vw, 34px);
+    margin: clamp(8px,1vw,20px) 0;
+}
+
+.clientes .image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: calc(50% - 2vw); */
+    width: 40%;
+}
+
+.clientes .central-image {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
+@media (max-width: 768px) {
+    .clientes .container-general {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clientes .card-column,
+    .clientes .image-column {
+        width: 100%;
+    }
+    .clientes .image-column{
+        display: none;;
+    }
+
+    .clientes .central-image {
+        max-height: 50vw;
+    }
+    .clientes .background-image{
+        background-position: 560px center;
+        opacity: 0.05;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .clientes .card-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clientes .card-content img {
+        width: 20vw;
+        height: 20vw;
+    }
+    .clientes .card-subject{
+        text-align: center;
+    }
+
+    .clientes h2::after{
+        background: linear-gradient(to right, rgba(0,0,0,0) 0%, #fff3eb 50%, rgba(0,0,0,0) 100%);
+    }
+}

@@ -1,0 +1,15 @@
+.section-video-apresentation{
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    padding: 4vw 0;
+    display: none;
+}
+
+.section-video-apresentation iframe{
+    width: 80vw;
+    max-width: 1216px;
+    aspect-ratio: 16 / 9;
+    border: 1px solid #2f2f2f;
+    border-radius: 1vw;
+}

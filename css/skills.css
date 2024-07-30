@@ -1,0 +1,160 @@
+.skills-experience {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 7.5vw;
+  gap: 4vw;
+  font-size: clamp(22px,4vw,46px)
+}
+
+.skills, .experience {
+  flex: 1;
+  z-index: 1;
+}
+
+.skills-experience .background-image{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  background-image: url(/Design/backgorund_image/section_skills.jpg);
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.skills-grid, .experience-grid {
+  display: grid;
+  gap: 2vw;
+  max-height: 700px; /* Limita a altura máxima a 500px */
+  overflow-y:auto; /* Adiciona a barra de rolagem vertical */
+  padding-right: 10px;
+}
+
+.skills-grid {
+  grid-template-columns: repeat(2,1fr);
+}
+
+.skills-experience h2 {
+  color: #FFF;
+  font-size: clamp(20px, 3vw, 36px);
+  text-align: center;
+  margin-bottom: clamp(10px, 1vw, 30px)
+}
+
+.skills-experience h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #ff2100 30%, #ff2100 60%, rgba(0,0,0,1) 100%);
+  opacity: 1;
+  margin: 15px 0 30px;
+}
+
+.skill-card, .experience-card {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  border-radius: 0.5vw;
+}
+.skill-card{
+  padding: clamp(4px,1vw,30px) clamp(10px,1vw,30px);
+}
+.experience-card {
+  padding: clamp(10px,1vw,30px) clamp(10px,1vw,30px);
+}
+
+.skill-card img, .experience-card img {
+  width: 3vw;
+  height: 3vw;
+  margin-right: 1vw;
+  min-height: 50px;
+  min-width: 50px;
+}
+
+.skill-info, .experience-info {
+  flex: 1;
+  color: #FFF;
+}
+
+.skill-info h4, .experience-info h4 {
+  font-size: clamp(18px,0.5em, 32px);
+  margin: 0 ;  /*clamp(5px, 0.5vw, 10px)*/ /* Ajusta o valor máximo de acordo com suas necessidades */
+}
+
+.progress-bar {
+  display: none;
+  background-color: #333;
+  border-radius: 0.4vw;
+  overflow: hidden;
+  height: 0.6vw;
+  min-height: 5px;
+}
+
+.progress {
+  display: none;
+  background: linear-gradient(to right,#ff220050,#ff6826);
+  height: 100%;
+  border-radius: 0.4vw;
+}
+
+.experience-card i {
+  background: linear-gradient(140deg, #ffe5d0, #ff9d64);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(24px, 3vw, 36px);
+  margin: 0.2vw clamp(10px, 0.5vw, 30px) 0 0;
+  align-self: flex-start ;
+}
+
+.experience-info p {
+  font-size: clamp(13px,0.5em, 20px);
+  margin: 0.2vw 0;
+}
+
+/* Estilos para personalizar a barra de rolagem */
+.skills-grid::-webkit-scrollbar, .experience-grid::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+.skills-grid::-webkit-scrollbar-track, .experience-grid::-webkit-scrollbar-track {
+  background: #1b1b1b; /* Cor do trilho */
+  border-radius: 10px;
+}
+
+.skills-grid::-webkit-scrollbar-thumb, .experience-grid::-webkit-scrollbar-thumb {
+  background-color: #ff9d64; /* Cor do polegar */
+}
+
+/* Para Firefox */
+.skills-grid {
+  scrollbar-width: thin; /* Largura da barra de rolagem */
+  scrollbar-color: #ff9d64 #1b1b1b; /* Cor do polegar e do trilho */
+}
+
+.experience-grid {
+  scrollbar-width:thin; /* Largura da barra de rolagem */
+  scrollbar-color: #ff9d64 #1b1b1b; /* Cor do polegar e do trilho */
+}
+
+@media (max-width: 768px) {
+  .skills-experience {
+    flex-direction: column;
+  }
+
+  .skills-grid{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .skills-experience .background-image{
+    background-position: -5% center;
+  }
+}
+
+@media(min-width: 480px){
+  .skills-grid, .experience-grid{
+    gap: 1vw
+  }
+}

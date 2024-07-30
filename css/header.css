@@ -1,0 +1,164 @@
+.with-drawer,
+.no-drawer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 clamp(4px, 4vw, 60px);
+  background-color: #000;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  height: clamp(40px, 7.5vw, 140px);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* Estado fixo para o cabeçalho sem drawer */
+.with-drawer.fixed,
+.no-drawer.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1000; /* Garantir que o cabeçalho fique acima de outros elementos */
+}
+
+/* Estado estático para o cabeçalho sem drawer */
+.with-drawer.static,
+.no-drawer.static {
+  position: static;
+}
+
+/* Ocultar cabeçalho ao rolar para baixo */
+.with-drawer.hidden,
+.no-drawer.hidden{
+  transform: translateY(-100%);
+}
+
+/* Placeholder para espaço reservado quando o cabeçalho está fixo */
+.header-placeholder {
+  display: none;
+  height: clamp(40px, 7.5vw, 140px); /* Altura igual ao cabeçalho */
+  width: 100%;
+}
+
+/* Mostrar placeholder quando o cabeçalho está fixo */
+.fixed + .header-placeholder {
+  display: block;
+}
+  
+
+.with-drawer .logo, .no-drawer .logo{
+    height: 100%;
+    background:none;
+}
+
+.with-drawer .logo img, .no-drawer .logo img {
+    height: 100%;
+}
+
+.no-drawer nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: clamp(15px,2vw,50px);
+    align-items: center;
+    margin: 0;
+}
+
+.no-drawer nav ul li,
+.no-drawer nav ul .gtranslate_wrapper {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o conteúdo de cada <li> e da <div> */
+    position: relative; /* Necessário para a borda inferior */
+}
+
+.no-drawer nav ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #ff2100; /* Gradiente da borda inferior */
+    transition: width 0.3s ease;
+    transform: translateY(5px);
+}
+
+.no-drawer nav ul .focado::after {
+    width: 100%;
+}
+
+.no-drawer nav ul .desfocado a {
+    color: #ffffff4f;
+}
+
+.no-drawer nav ul li a {
+    color: #fff3eb;
+    text-decoration: none;
+    font-size: clamp(10px, 2vw, 26px);
+    transition: color 0.5s;
+}
+
+/* Outros estilos... */
+
+.gtranslate_wrapper {
+    text-align: center;
+}
+
+/* Estilos para o seletor de idiomas */
+.gt_selector {
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(10px, 1.2vw, 24px);
+    color: #f1f9fe;
+    background-color: #880f06;
+    padding: clamp(5px,0.4vw,15px); /* Padding responsivo usando vw */
+    border-radius: 4px;
+    cursor: pointer;
+    width: clamp(90px,10.5vw,200px); /* Ocupa toda a largura disponível */
+}
+
+/* Estilo para as opções do seletor de idiomas */
+.gt_selector option {
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(10px, 1.2vw, 24px);
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Estilo para o texto "Select Language" na primeira opção */
+.gt_selector option:first-child {
+    font-style: italic;
+    color: #aaa;
+}
+
+.with-drawer {
+    display: none; 
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(2px, 2vw, 30px) clamp(4px, 4vw, 60px);
+    background-color: #000;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.with-drawer button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.with-drawer i{
+    line-height: 1;
+    font-size: clamp(18px, 3vw, 36px);
+    color: #ff3f00;
+}
+
+@media (max-width:720px){
+    .no-drawer{
+        display: none;
+    }
+    .with-drawer{
+        display: flex;
+    }
+}

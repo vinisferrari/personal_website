@@ -1,0 +1,110 @@
+:root {
+    --color-text: #fff;
+}
+
+footer {
+    background-color: #000;
+    box-shadow: 0px 0px 6px 0px #ff9d64;
+    text-align: center;
+    font-size: clamp(22px,4vw,42px);
+    padding: clamp(10px,2vw,2vw) 7.5vw;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a i {
+    font-size: clamp(20px, 2vw, 38px);
+    color: var(--color-text); /* Cor dos ícones */
+    transition: color 0.3s ease;
+}
+
+footer a:hover i,
+footer a:hover span {
+    color: #ff9d64;
+    /* Cor dos ícones ao passar o mouse */
+}
+
+footer ul li span {
+    display: none;
+    /* Mantém os spans ocultos por padrão */
+    color: var(--color-text);
+    font-size: clamp(16px,0.5em, 20px);
+    transition: color 0.3s ease;
+}
+
+
+
+@media (min-width: 550px) {
+    footer ul {
+        align-items: center;
+        /* Centraliza os itens verticalmente */
+    }
+
+    footer ul li a {
+        flex-direction: row;
+        /* Alinha ícones e texto na horizontal */
+        gap: 10px;
+        /* Espaçamento entre ícone e texto */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    footer ul li span {
+        display: block;
+        /* Exibe os spans em telas maiores */
+        margin-top: 0;
+        /* Remove qualquer margem superior */
+    }
+
+    footer a i {
+        font-size: 20px;
+        /* Tamanho dos ícones em telas maiores */
+    }
+
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+footer .paragraph {
+    margin: 0;
+    color: var(--color-text);
+    font-size: clamp(12px, 1vw, 18px);
+}
+
+@media (min-width: 600px) {
+    footer .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; /* Espaçamento horizontal entre os parágrafos */
+    }
+
+    .paragraph:not(:last-child)::after {
+        content: "|";
+        margin-left: 10px;
+    }
+}

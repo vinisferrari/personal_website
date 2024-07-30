@@ -1,0 +1,165 @@
+.servicos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2vw 7.5vw;
+    background-color: transparent;
+    font-size: clamp(22px,4vw,42px);
+}
+
+.servicos .background-image{
+    background-image: url(/Design/Servicos/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+.servicos h1{
+    color: #FFF;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: clamp(10px, 1vw, 30px);
+    opacity: 1;
+    z-index: 1;
+}
+
+.servicos h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #ff2100 30%, #ff2100 60%, rgba(0,0,0,1) 100%);
+    opacity: 1;
+    margin: 15px 0 25px;
+}
+
+.servicos .container-general{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(20px,1.5vw,20px);
+    z-index: 1;
+}
+
+.servicos .conteiner-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(20px,1.5vw,20px);
+}
+
+.servicos .card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2px;
+    border-radius: 15px;
+    background: linear-gradient(60deg, #ff9d64,#ffe5d0, #880f06);
+    opacity: 0.6;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
+.servicos .card {
+    position: relative;
+    background-color: #222;
+    border-radius: 15px;
+    padding: 20px clamp(20px,2vw,50px);
+    width: clamp(350px,22vw,400px);
+    height: clamp(420px, 33vw,500px);
+    box-shadow: 0 0 20px rgba(102, 102, 102, 0.4);
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.servicos .focado {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #880f06;
+}
+
+
+.servicos .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.servicos .card-subject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.servicos .icon {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.servicos .card-subject h2 {
+    color: #FFF;
+    font-size: clamp(22px,0.6em, 32px);
+    margin: 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-subject h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #ffc6a0 30%, #ffc6a0 60%, rgba(0,0,0,1) 100%);
+    opacity: 1;
+    margin: 15px 0 5px;
+  }
+
+.servicos .focado  {
+    transform: scale(1.05);
+}
+
+.servicos p {
+    color: #FFF;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    width: 100%;
+    font-size: clamp(16px,0.4em, 34px);
+    line-height: 1.5;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.servicos .desfocado {
+    filter: blur(4px); /* Exemplo de desfoque */
+    transform: scale(0.97);
+}
+
+@media (max-width: 768px) { /* ajuste a condição conforme necessário */
+    .servicos .card {
+        width: clamp(100px, 60vw, 300px);
+        height: 100%; /* Esta altura será 100% do container pai */
+    }
+}

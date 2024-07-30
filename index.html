@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home</title>
+  <link rel="icon" type="x-icon" href="favicon.ico">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/drawer-menu.css">
+  <link rel="stylesheet" type="text/css" href="css/hero.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/presentation-video-section.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/contact-section.css">
+  <link rel="stylesheet" type="text/css" href="css/tecnologias.css">
+  <link rel="stylesheet" type="text/css" href="css/service.css">
+  <link rel="stylesheet" type="text/css" href="css/clientes.css">
+  <link rel="stylesheet" type="text/css" href="css/skills.css">
+  <script src="js/language-selector.js"></script>
+  <script src="js/carousel-slide.js"></script>
+  <script src="js/drawerMenuHandler.js"></script>
+  <script src="js/animation-service.js"></script>
+  <script src="js/animation-header"></script>
+  <script src="js/navegation-header.js"></script>
+  <script src="https://kit.fontawesome.com/832d8f848b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="no-drawer">
+    <div class="logo">
+      <img src="\Design\logo\logo simples.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#skills-experience">Habilidades</a></li>
+        <li><a href="#portfolio">Portfólios</a></li>
+        <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=5519984222461&text=Ol%C3%A1%2C+tenho+um+projeto+em+mente%21+Vamos+conversar%3F&type=phone_number&app_absent=0">Fale Comigo</a></li>
+        <div class="gtranslate_wrapper"></div>
+        <script>
+          window.gtranslateSettings = {
+            "default_language": "pt",
+            "native_language_names": true,
+            "languages": ["pt", "es", "en"],
+            "wrapper_selector": ".gtranslate_wrapper"
+          };
+        </script>
+        <script src="https://cdn.gtranslate.net/widgets/latest/dropdown.js" defer></script>
+      </ul>
+    </nav>
+  </header>
+  <header class="with-drawer">
+    <button type="button" onclick="DrawerMenuHandler.toggle('bar-drawer-menu')">
+      <i class="fa-solid fa-bars fa-2xl"></i>
+    </button>
+    <div class="logo">
+      <img src="\Design\logo\logo simples.png" alt="Logo">
+    </div>
+  </header>
+  <div class="drawer-menu-container" id="bar-drawer-menu">
+    <button type="button" onclick="DrawerMenuHandler.toggle('bar-drawer-menu')">
+      <i class="fa-solid fa-xmark fa-2xl" style="color: #FFF;"></i>
+    </button>
+    <div class="container-menu">
+      <div class="menu-item">
+        <a href="#servicos" onclick="DrawerMenuHandler.toggle('bar-drawer-menu')"><strong>Serviços</strong></a>
+      </div>
+      <div class="menu-item">
+        <a href="#skills-experience" onclick="DrawerMenuHandler.toggle('bar-drawer-menu')"><strong>Habilidades</strong></a>
+      </div>
+      <div class="menu-item">
+        <a href="#portfolio" onclick="DrawerMenuHandler.toggle('bar-drawer-menu')"><strong>Portfólios</strong></a>
+      </div>
+      <div class="menu-item">
+        <a target="_blank" href="https://api.whatsapp.com/send/?phone=5519984222461&text=Ol%C3%A1%2C+tenho+um+projeto+em+mente%21+Vamos+conversar%3F&type=phone_number&app_absent=0"><strong>Fale Comigo</strong></a>
+      </div>
+      <div class="menu-item">
+        <div class="gtranslate_wrapper"></div>
+      </div>
+    </div>
+  </div>
+  <section class="hero" id="hero">
+    <div class="hero-content-mobile">
+    </div>
+    <div class="hero-conteiner">
+      <div class="hero-content">
+        <div class="hero-image"></div>
+        <div class="hero-text">
+          <h1><span>Olá, eu sou Vinícius</span><br>Desenvolvedor Full Stack</h1>
+          <p class="biography">Formando em Análise e Desenvolvimento de Sistemas pela Universidade Presbiteriana Mackenzie, com       expertize em projetos de TI como desenvolvimento de aplicações web, websites, análise de dados, criação de dashboards, automação de tarefas e planilhas. 
+          </p>
+          <div class="contact-info">
+            <p><strong>Celular:</strong> +55 19 98422-2461</p>
+            <p><strong>E-mail:</strong> viniciusferrari.silva@gmail.com</p>
+            <p><strong></strong> São Paulo, Brasil</p>
+          </div>
+          <div class="contact-button">
+            <div class="contact-message">
+              <button class="download-cv"><a href="https://api.whatsapp.com/send/?phone=5519984222461&type=phone_number&app_absent=0" target="_blank">Enviar mensagem</a></button>
+            </div>
+            <div class="social-icons">
+              <div class="icon-container">
+                <a href="https://github.com/vinisferrari" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+              </div>
+              <div class="icon-container">
+                <a href="https://www.instagram.com/vinisferrari/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+              </div>
+              <div class="icon-container">
+                <a href="https://www.linkedin.com/in/vinisferrari/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-video-apresentation">
+    <iframe title="Apresentação Pessoal"
+      src="https://www.youtube.com/embed/uKsq7y6DJ84?rel=0?version=3&loop=1&controls=1&showinfo=0&playlist=uKsq7y6DJ84"
+      frameborder="0" allow="autoplay"></iframe>
+  </section>
+
+  <section class="skills-experience" id="skills-experience">
+    <div class="background-image"></div>
+    <div class="skills">
+      <h2>Tecnologias e ferramentas utilizadas</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\html.png" alt="HTML Logo">
+          <div class="skill-info">
+            <h4>HTML</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\css.png" alt="CSS Logo">
+          <div class="skill-info">
+            <h4>CSS</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\vba.png" alt="VBA Logo">
+          <div class="skill-info">
+            <h4>Visual Basic for Applications</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\powerbi.png" alt="Power BI Logo">
+          <div class="skill-info">
+            <h4>Power BI</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\powerautomate.png" alt="Power Automate Logo">
+          <div class="skill-info">
+            <h4>Power Automate</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\office365.png" alt="Microsoft Office Logo">
+          <div class="skill-info">
+            <h4>Microsoft Office</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\javascript.png" alt="JavaScript Logo">
+          <div class="skill-info">
+            <h4>JavaScript</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\typescript.png" alt="TypeScript Logo">
+          <div class="skill-info">
+            <h4>TypeScript</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\sql.png" alt="SQL Logo">
+          <div class="skill-info">
+            <h4>SQL</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\excel.png" alt="Excel Logo">
+          <div class="skill-info">
+            <h4>Excel</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\figma.png" alt="Figma Logo">
+          <div class="skill-info">
+            <h4>Figma</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\mongodb.png" alt="MongoDB Logo">
+          <div class="skill-info">
+            <h4>MongoDB</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\python.png" alt="Python Logo">
+          <div class="skill-info">
+            <h4>Python</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width:75%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\java.png" alt="Java Logo">
+          <div class="skill-info">
+            <h4>Java</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\vscode.png" alt="VS Code Logo">
+          <div class="skill-info">
+            <h4>Visual Studio Code</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\jupyter_notebook.png" alt="Jupyter Notebook Logo">
+          <div class="skill-info">
+            <h4>Jupyter Notebook</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\photoshop.png" alt="Photoshop Logo">
+          <div class="skill-info">
+            <h4>Photoshop</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\nodejs.png" alt="Node.js Logo">
+          <div class="skill-info">
+            <h4>Node.js</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="\Design\tecnologias e ferramentas\logos\git.png" alt="Git Logo">
+          <div class="skill-info">
+            <h4>Git</h4>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="experience">
+      <h2>Conhecimentos</h2>
+      <div class="experience-grid">
+        <div class="experience-card">
+          <i class="fa-solid fa-bookmark"></i>
+          <div class="experience-info">
+            <h4>Arquitetura em Nuvem</h4>
+            <p>princípios de rede, armazenamento, máquinas virtuais, segurança na nuvem e escalabilidade.</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <i class="fa-solid fa-bookmark"></i>
+          <div class="experience-info">
+            <h4>Banco de Dados Relacionais e Não Relacionais</h4>
+            <p>experiência com consultas SQL, administração de bancos de dados, gerenciamento de acesso, criação de políticas e grupos, configuração de relacionamentos em bancos relacionais.</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <i class="fa-solid fa-bookmark"></i>
+          <div class="experience-info">
+            <h4>Práticas de ETL (Extract, Transform, Load)</h4>
+            <p>habilidade em conectar fontes de dados, realizar limpeza e padronização, contextualizar, validar e carregar dados com precisão.</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <i class="fa-solid fa-bookmark"></i>
+          <div class="experience-info">
+            <h4>Desenvolvimento Web</h4>
+            <p>Criação de páginas responsivas, uso de animações e efeitos modernos, aplicação de CSS mobile first e design centrado em UX/UI.</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <i class="fa-solid fa-bookmark"></i>
+          <div class="experience-info">
+            <h4>Gerenciamento do Microsoft Office 365</h4>
+            <p>Automatização de tarefas, gerenciamento eficiente de acesso, criação de perfis personalizados e listas de distribuição, integração de aplicativos e colaboração/suporte para equipe.</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <i class="fa-solid fa-bookmark"></i>
+          <div class="experience-info">
+            <h4>Dashboards com Power BI</h4>
+            <p>Desenvolvimento de painéis detalhados, dinâmicos e interativos, indicadores personalizados, conexão com múltiplas fontes de dados, oferecendo insights valiosos em tempo real.</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <i class="fa-solid fa-bookmark"></i>
+          <div class="experience-info">
+            <h4>Planilhas Excel Avançadas</h4>
+            <p>Criação de formulários, regras de formatação complexas, uso avançado de fórmulas, macros, validação de dados, suplementos, dashboards interativos e automações completas com VBA.</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <i class="fa-solid fa-bookmark"></i>
+          <div class="experience-info">
+            <h4>Administração de Redes de Computadores no SO Windows</h4>
+            <p>Otimização de performance, implementação de medidas de segurança, backups, antivírus e configuração de acessos.</p>
+          </div>
+        </div>
+      </div>
+    </div>    
+</section>
+
+
+  <section class="servicos" id="servicos">
+    <div class="background-image"></div>
+    <h1>O que posso te oferecer?</h1>
+    <div class="container-general">
+      <div class="conteiner-group">
+        <div class="card">
+          <div class="card-content">
+            <img src="\Design\Servicos\sheet.png" alt="Ícone Planilhas do Excel" class="icon">
+            <div class="card-subject">
+              <h2>Planilhas Completas</h2>
+              <p>Evite erros operacionais e ganhe eficiência com planilhas automatizadas e de fácil uso</p>
+              <p>Controle seu estoque, pedidos e finanças com precisão</p>
+              <p>Utilize formulários de cadastro para clientes, compras e fornecedores</p>
+              <p>Visualize dados em painéis gráficos automáticos, dinâmicos e elegantes</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <img src="\Design\Servicos\dashboard1.png" alt="Ícone Dashboard" class="icon">
+            <div class="card-subject">
+              <h2>Dashboards</h2>
+              <p>Transforme dados em decisões com dashboards personalizados e impactantes</p>
+              <p>Monitore métricas essenciais em tempo real e tome decisões rápidas e informadas</p>
+              <p>Crie relatórios personalizados e integre múltiplas fontes de dados para obter uma visão completa</p>
+              <p>Torne informações complexas acessíveis e compreensíveis para todos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="conteiner-group">
+        <div class="card">
+          <div class="card-content">
+            <img src="\Design\Servicos\site1.png" alt="Ícone Sites e Landing Pages" class="icon">
+            <div class="card-subject">
+              <h2>Sites e Landing Pages</h2>
+              <p>Estabeleça uma presença online poderosa com sites e landing pages de alta performance</p>
+              <p>Conquiste e converta visitantes com designs modernos e funcionalidades responsivas</p>
+              <p>Aumente o engajamento e a satisfação dos clientes com navegação intuitiva e experiências de usuário envolventes</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <img src="\Design\Servicos\robot-service.png" alt="Ícone Automação de Tarefas" class="icon">
+            <div class="card-subject">
+              <h2>Automação de Tarefas</h2>
+              <p>Maximize sua eficiência e reduza custos com soluções de automação de tarefas personalizadas.</p>
+              <p>Automatize desde e-mails até fluxos de trabalho complexos, liberando tempo e recursos.</p>
+              <p>Concentre-se no crescimento do seu negócio enquanto simplifica processos operacionais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </section>
+  </section>
+  <section class="section-portfolio" id="portfolio">
+    <div class="background-image"></div>
+    <div class="container-text">
+      <h1>Portfólio Portfólio Portfólio Portfólio <span>Portfólio</span> Portfólio Portfólio Portfólio Portfólio</h1>
+    </div>
+    <div class="fade-container">
+      <div class="overlay">
+        <svg x="0px" y="0px" viewBox="0 0 512 512">
+          <path d="M398.748,189.901c-9.442,0-18.123,3.321-24.936,8.856c-4.313-17.201-19.904-29.976-38.425-29.976
+                  c-8.903,0-17.129,2.952-23.751,7.93v-0.001c0-21.841-17.769-39.609-39.609-39.609c-8.903,0-17.129,2.952-23.751,7.93V81.669
+                  c0-21.841-17.769-39.609-39.609-39.609s-39.609,17.769-39.609,39.609v186.78l-23.426-23.426
+                  c-29.051-29.051-54.042-9.432-58.146-5.819c-19.791,15.063-14.875,36.751-6.673,47.771l88.278,124.628
+                  c0.711,26.363,12.358,51.289,32.977,70.438C222.57,501.081,249.993,512,277.307,512h63.361c27.297,0,52.294-10.792,70.387-30.39
+                  c17.606-19.069,27.302-44.846,27.302-72.58V229.51C438.357,207.669,420.588,189.901,398.748,189.901z M340.668,496.143h-63.361
+                  c-23.357,0-46.846-9.375-64.445-25.721c-18.021-16.737-27.946-38.54-27.946-61.392v-2.523l-91.22-128.779l-0.127-0.174
+                  c-1.134-1.513-10.668-15.088,3.695-25.86l0.45-0.338l0.399-0.399c0.037-0.037,3.945-3.735,10.037-5.141
+                  c1.541-0.355,3.09-0.533,4.648-0.533c7.085,0,14.338,3.669,21.623,10.953l50.495,50.495V81.669
+                  c0-13.097,10.655-23.751,23.751-23.751s23.751,10.655,23.751,23.751v158.4h15.857v-63.361c0-13.097,10.655-23.751,23.751-23.751
+                  c13.097,0,23.751,10.655,23.751,23.751v95.041h15.857v-63.361c0-13.097,10.655-23.751,23.751-23.751s23.751,10.655,23.751,23.751
+                  v95.041h15.857v-73.921c0-13.097,10.655-23.751,23.751-23.751c13.096,0,23.751,10.655,23.751,23.751v179.523h0.002
+                  C422.499,458.693,387.319,496.143,340.668,496.143z"></path>
+  
+          <path d="M208.667,0c-56.778,0-102.969,46.011-102.969,102.789c0,29.245,12.504,57.214,34.306,76.735l10.578-11.768
+                  c-18.447-16.518-29.027-40.135-29.027-64.876c0.001-48.034,39.079-87.022,87.113-87.022s87.112,38.663,87.112,87.293h15.857
+                  C311.636,46.064,265.445,0,208.667,0z"></path>
+        </svg>
+      </div>
+      <div class="wrapper">
+        <div class="fade-left"></div>
+        <section class="section-projeto">
+          <div class="carousel">
+            <div class="slide active">
+              <img src="\Design\portifolio\dashboard\dashfinanceiro.png" alt="Primeiro Slide">
+              <div class="text">
+                <h3>Dashboard Orçamentário</h3>
+                <p>Tela principal com os principais indicadores operacionais</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="\Design\portifolio\dashboard\dashfinanceiro2.png" alt="Segundo Slide">
+              <div class="text">
+                <p>Tela secundária com detalhamento</p>
+              </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </section>
+        <section class="section-projeto">
+          <div class="carousel">
+            <div class="slide active">
+              <img src="\Design\portifolio\dashboard\dashvendas.png" alt="Primeiro Slide">
+              <div class="text">
+                <h3>Dashboard Vendas</h3>
+                <p>Tela de visão geral das metas e da variação mensal</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="\Design\portifolio\dashboard\dashvendas2.png" alt="Segundo Slide">
+              <div class="text">
+                <p>Tela Leads Gerados de Pessoa Física</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="\Design\portifolio\dashboard\dashvendas3.png" alt="Terceiro Slide">
+              <div class="text">
+                <h3>Título do terceiro slide</h3>
+                <p>Tela Leads Gerados de Pessoa Jurídica</p>
+              </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </section>
+        <section class="section-projeto">
+          <div class="carousel">
+            <div class="slide active">
+              <img src="/Design/portifolio/dashboard/dashsocial1.png" alt="Primeiro Slide">
+              <div class="text">
+                <h3>Dashboard Redes Sociais</h3>
+                <p>Tela de performance no TikTok</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="/Design/portifolio/dashboard/dashsocial2.png" alt="Segundo Slide">
+              <div class="text">
+                <p>Tela de análise temporal da performance no TikTok</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="/Design/portifolio/dashboard/dashsocial7.png" alt="Terceiro Slide">
+              <div class="text">
+                <p>Tela de performance no LinkedIn</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="/Design/portifolio/dashboard/dashsocial8.png" alt="Terceiro Slide">
+              <div class="text">
+                <p>Tela de análise temporal da performance no LinkedIn</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="/Design/portifolio/dashboard/dashsocial3.png" alt="Terceiro Slide">
+              <div class="text">
+                <p>Tela de performance no Instagram</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="/Design/portifolio/dashboard/dashsocial4.png" alt="Terceiro Slide">
+              <div class="text">
+                <p>Tela de análise temporal da performance no Instagram</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="/Design/portifolio/dashboard/dashsocial5.png" alt="Terceiro Slide">
+              <div class="text">
+                <p>Tela de performance no Facebook</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="/Design/portifolio/dashboard/dashsocial6.png" alt="Terceiro Slide">
+              <div class="text">
+                <p>Tela de análise temporal da performance no Facebook</p>
+              </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </section>
+        <section class="section-projeto">
+          <div class="carousel">
+            <div class="slide active">
+              <img src="\Design\portifolio\dashboard\dashemail.png" alt="Primeiro Slide">
+              <div class="text">
+                <h3>Dashboard Gestão E-mails Marketing</h3>
+                <p>Tela principal com indicadores, informações geras e listagem de e-mail disparados</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="\Design\portifolio\dashboard\dashemail2.png" alt="Segundo Slide">
+              <div class="text">
+                <p>Tela de detalhamento de e-mail marketing selecionado</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="\Design\portifolio\dashboard\dashemail3.png" alt="Terceiro Slide">
+              <div class="text">
+                <p>Tela de análise temporal da performance dos e-mails marketing selecionados</p>
+              </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </section>
+        <div class="fade-right"></div>
+      </div>
+    </div>
+    <div class="all-portfolio">
+      <a href="https://www.behance.net/vinisferrari" target="_blank">
+        <p>ACESSE O PORTFOLIO COMPLETO <i class="fa-solid fa-arrow-pointer"></i></p>
+      </a>
+    </div>
+  </section>
+  <section class="orcamento-section" id="contact-orcamento">
+      <div class="elementor-widget-container">
+          <a class="elementor-button-link" target="_blank" href="https://api.whatsapp.com/send/?phone=5519984222461&text=
+          Ol%C3%A1%2C+tenho+um+projeto+em+mente%21+Vamos+conversar%3F&type=phone_number&app_absent=0
+          ">
+            <span class="elementor-button-content-wrapper">
+              <span class="elementor-button-text">Enviar mensagem</span>
+            </span>
+          </a>
+      </div>
+  </section>
+  <section class="clientes">
+    <div class="background-image"></div>
+    <h1>Para quem realizo atendimento?</h1>
+    <div class="container-general">
+      <div class="card-column">
+        <div class="card">
+          <div class="card-content">
+            <div class="image-container">
+              <svg id="Upload_Gradient_Style" viewBox="0 0 512 512" data-name="Upload Gradient Style">
+                <linearGradient id="linear-gradient">
+                  <stop offset="0" stop-color="#fff3eb" />
+                  <stop offset="1" stop-color="#1f0100" />
+                </linearGradient>
+                <path
+                  d="m477.8 299.6a97 97 0 0 0 -3.3-106.7 81.4 81.4 0 0 0 .5-8.7c0-50.2-45.9-90.5-97.8-78.5-7.2-59.4-57.8-105.6-119.1-105.6s-112.6 46.8-119.3 106.7a79.3 79.3 0 0 0 -21.1-3.2 79.5 79.5 0 0 0 -80 89.3 96.6 96.6 0 0 0 -3.4 106.6 80 80 0 0 0 -34.2 65.4v98.2h88v49h335.9v-49h88.1v-98.2a79.5 79.5 0 0 0 -34.3-65.3zm-18.8-115.4a62.4 62.4 0 0 1 -.8 9.7l-.5 3.3 2 2.7a80.8 80.8 0 0 1 4.2 91.8 79.6 79.6 0 0 0 -31.7-6.6h-8.5v-13.2a57.7 57.7 0 0 0 28.5-49.8v-43.3l-9.5 1.8a42.1 42.1 0 0 1 -34.9-9.3l-5.6-4.9-5.3 5.3a40.5 40.5 0 0 1 -18.7 10.5v-8.4a29.3 29.3 0 0 0 0-16.6v-35a62.2 62.2 0 0 1 16.3-2.6 64.6 64.6 0 0 1 64.5 64.6zm-168.8 203.1-28.2-40.9a44.1 44.1 0 0 0 43.7-41.9h9.5c2.9 45.6-15.1 72.1-25 82.8zm-189.2-126.9a9.6 9.6 0 0 0 -2.5-1.2 41.8 41.8 0 0 1 -22.6-37.1v-24.7a57.9 57.9 0 0 0 33.3-9.7c8.1 6.3 17.9 10 28.8 11.4v59.3l-1.7 1a5.3 5.3 0 0 0 -1.5.8 42.7 42.7 0 0 1 -33.8.2zm3.4 17.9a57.9 57.9 0 0 0 26.5 0v8a13.3 13.3 0 1 1 -26.5 0zm49.6-85.6a32.9 32.9 0 0 0 22.7 6.2c5.3 23.3 17.4 43.2 33.6 56.7v32.9h-42.3a81 81 0 0 0 -14 1.4zm20.2-9.6c-9.9.7-18.2-7.7-18.2-17.6a17.6 17.6 0 0 1 17.6-17.6l2.5.2a120.4 120.4 0 0 0 -2.4 23.9 103.1 103.1 0 0 0 .5 11.1zm121.4 62.9-2.2 1.5a59.7 59.7 0 0 1 -33.6 10.7h-.1c-12.9 0-25.5-4.5-36.5-12.8l-2.9-2.2c-14.9-12.5-25.6-31.8-29.3-54.3a5.1 5.1 0 0 0 -.3-1.7 108.8 108.8 0 0 1 -1-15.2 106.4 106.4 0 0 1 1.8-19.5c35.5-5.5 77.6-17.4 96.7-42.6a224.1 224.1 0 0 0 35.7 27.7c.8 2.2 1.5 4.3 2.1 6.5a5.9 5.9 0 0 0 .5 1.9 102.4 102.4 0 0 1 3.3 26 106.2 106.2 0 0 1 -1.1 15.1 12.5 12.5 0 0 0 -.3 1.9c-3.9 24.2-16.1 44.7-32.8 57zm-41.1 84.4a28.1 28.1 0 0 1 -28.2-28.1v-36.1a74.2 74.2 0 0 0 33.2 8h.4a73.2 73.2 0 0 0 30-6.5v34.6a28.1 28.1 0 0 1 -28.2 28.1zm-53.5-25.9h9.5a44.1 44.1 0 0 0 43.7 41.9l-28.1 40.9c-10-10.8-28-37.2-25.1-82.8zm104.9-16v-30.3c17.8-13.5 31.2-34.5 36.9-59.3a33 33 0 0 0 19.4-4.1v95.9a82.1 82.1 0 0 0 -18-2.2zm56.3-117.2a17.3 17.3 0 0 1 -16.9 11.8c.3-3.7.5-7.4.5-11.1a118.9 118.9 0 0 0 -2.4-23.9 17.4 17.4 0 0 1 18.8 11.4zm32.3 128.3a13.4 13.4 0 0 1 -13.3-13.3v-8.1a56.5 56.5 0 0 0 26.5.1v8a13.3 13.3 0 0 1 -13.2 13.3zm-16.3-39.3v-61.7a57.2 57.2 0 0 0 24.8-10.9 58.2 58.2 0 0 0 33.2 9.7v24.7a41.8 41.8 0 0 1 -22.6 37.1 11.5 11.5 0 0 0 -2.5 1.2 41.3 41.3 0 0 1 -32.9-.1zm-120.1-244.2a104.2 104.2 0 0 1 104.1 104.1v16.4a32.4 32.4 0 0 0 -23.1-4l-1.2-3.3-1-2.5-2.4-1.4c-23.2-13.8-41.8-33.5-42-33.7l-8-8.6-5.1 10.6c-9.2 19.7-41.5 35.1-89 42.8a32.9 32.9 0 0 0 -36.4 1.9v-18.2c0-.9.1-1.7.1-2.6s.1-.1 0-.1c1.5-56.1 47.5-101.4 104-101.4zm-222.2 232.9a80.9 80.9 0 0 1 16.5-49.1l2-2.7-.5-3.3a77.7 77.7 0 0 1 -.8-9.7 64.7 64.7 0 0 1 64.6-64.6 63.9 63.9 0 0 1 20.3 3.7v60a41.3 41.3 0 0 1 -22.8-11.6l-5.2-5.2-5.7 4.8a42 42 0 0 1 -34.8 9.3l-9.6-1.8v43.3a57.9 57.9 0 0 0 28.5 49.8v13.2h-8.5a79.4 79.4 0 0 0 -31.6 6.6 80.7 80.7 0 0 1 -12.4-42.7zm28.5 198.1v-91.7a8 8 0 0 0 -16 0v91.7h-32.3v-82.2a63.8 63.8 0 0 1 63.8-63.8h12.6a29.8 29.8 0 0 0 17.1 13.2 79.1 79.1 0 0 0 -21.5 54v78.8zm343.6 49h-39.9v-114.8a8 8 0 0 0 -16 0v114.8h-190.6v-114.8a8 8 0 1 0 -16 0v114.8h-41.4v-127.8a63.9 63.9 0 0 1 63.9-63.8h16.9c-4 69.3 35.9 100.1 37.7 101.4l6.7 5 28.8-42 28.8 42 6.7-5c1.7-1.3 41.8-32.1 37.7-101.4h12.9a63.8 63.8 0 0 1 63.8 63.8zm88.1-49h-32.4v-91.7a8 8 0 0 0 -16 0v91.7h-23.7v-78.8a79 79 0 0 0 -21.4-54 29.6 29.6 0 0 0 17-13.2h12.6a63.9 63.9 0 0 1 63.9 63.8zm-251.3-257.6a8 8 0 0 1 -8-8c0 .5-1-.1-2.6-.1a4.2 4.2 0 0 0 -2.8.9 7.5 7.5 0 0 1 -7.9 7.6c-4.4 0-7.8-4-7.8-8.4 0-9 8.1-16.1 18.5-16.1s18.6 7.1 18.6 16.1a8 8 0 0 1 -8 8zm54.8-8a8 8 0 0 1 -16 0c0 .5-1-.1-2.6-.1a3.8 3.8 0 0 0 -2.8.9 7.6 7.6 0 0 1 -7.9 7.6c-4.4 0-7.9-4-7.9-8.4 0-9 8.2-16.1 18.6-16.1s18.6 7.1 18.6 16.1zm-23.2 37c0 9-8.1 16.1-18.5 16.1s-18.6-7.1-18.6-16.1a8 8 0 0 1 16 0c0-.5 1 .1 2.6.1a4.2 4.2 0 0 0 2.8-.9 7.5 7.5 0 0 1 7.9-7.6c4.4 0 7.8 4 7.8 8.4z"
+                  fill="url(#linear-gradient)" />
+              </svg>
+            </div>
+            <div class="card-subject">
+              <h2>Comerciantes e lojistas locais</h2>
+              <p>Buscam soluções eficientes e personalizadas para aprimorar a gestão de seus negócios.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="image-container">
+              <svg viewBox="0 0 64 64">
+                <linearGradient id="SVGID_1_">
+                  <stop offset="0" stop-color="#fff3eb" />
+                  <stop offset="1" stop-color="#1f0100" />
+                </linearGradient>
+                <path
+                  d="m55.754 11.674c1.367-1.101 2.246-2.786 2.246-4.674 0-3.309-2.691-6-6-6s-6 2.691-6 6c0 1.888.879 3.573 2.246 4.674-1.388.506-2.645 1.282-3.709 2.268-3.691-2.571-8.002-3.942-12.537-3.942-12.131 0-22 9.869-22 22 0 3.112.671 6.185 1.935 9.003-3.279.036-5.935 2.711-5.935 5.997 0 1.888.879 3.573 2.246 4.674-4.219 1.539-7.246 5.58-7.246 10.326v1h22v-1c0-4.746-3.027-8.787-7.246-10.326.929-.747 1.631-1.764 1.986-2.931 3.975 3.398 8.964 5.257 14.26 5.257 12.131 0 22-9.869 22-22 0-3.107-.667-6.185-1.928-9h10.928v-1c0-4.746-3.027-8.787-7.246-10.326zm-7.754-4.674c0-2.206 1.794-4 4-4s4 1.794 4 4-1.794 4-4 4-4-1.794-4-4zm-22 44.086c-.681-.213-1.347-.469-2-.754v-28.332h16v28.318c-.651.285-1.316.543-2 .759v-9.077h-12zm15.191-31.086h-19.191v-1c0-.551.449-1 1-1h18c.254 0 .486.101.667.265-.203.56-.366 1.138-.476 1.735zm-19.191 16h-2v-4h2zm-2 2h2v4h-2zm22 0h2v4h-2zm2-2h-2v-4h2zm-12-24c4.039 0 7.882 1.195 11.191 3.44-.236.315-.455.643-.656.983-.454-.271-.98-.423-1.535-.423h-18c-1.654 0-3 1.346-3 3v3h2v4h-5c-1.654 0-3 1.346-3 3v11.723c-1.31-2.705-2-5.695-2-8.723 0-11.028 8.972-20 20-20zm-11.055 49h-2.945v-4h-2v4h-8v-4h-2v4h-2.945c.499-4.494 4.32-8 8.945-8s8.446 3.506 8.945 8zm-8.945-10c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm4-8.46v-13.54c0-.551.449-1 1-1h5v2h-4v14h4v5.31c-1.462-.848-2.826-1.883-4.059-3.103-.193-1.45-.903-2.735-1.941-3.667zm12 9.063v-7.603h8v7.597c-1.293.263-2.63.403-4 .403-1.36 0-2.698-.135-4-.397zm14-2.309v-5.294h4v-14h-4v-2h5c.551 0 1 .449 1 1v14.949c-1.618 2.161-3.655 3.983-6 5.345zm10-17.294c0 3.105-.732 6.035-2 8.66v-11.66c0-1.654-1.346-3-3-3h-5v-3h7.854c1.4 2.774 2.146 5.87 2.146 9zm6-11v-4h-2v4h-8v-4h-2v4h-2.945c.499-4.494 4.32-8 8.945-8s8.446 3.506 8.945 8zm-30 9h8c1.103 0 2-.897 2-2v-2c0-1.103-.897-2-2-2h-8c-1.103 0-2 .897-2 2v2c0 1.103.897 2 2 2zm0-4h8l.001 2h-8.001zm10 8c0-1.103-.897-2-2-2h-8c-1.103 0-2 .897-2 2v2c0 1.103.897 2 2 2h8c1.103 0 2-.897 2-2zm-10 2v-2h8l.001 2zm27 6.333 8 10.667h-5v5c0 2.757-2.243 5-5 5h-14v-2h14c1.654 0 3-1.346 3-3v-7h3l-4-5.333-4 5.333h3v6c0 1.103-.897 2-2 2h-13v-2h13v-4h-5zm-18 18.667v2h-2v-2zm-4 2h-2v-2h2zm-25-50h-3l4 5.333 4-5.333h-3v-6c0-1.103.897-2 2-2h13v2h-13v4h5l-8 10.667-8-10.667h5v-5c0-2.757 2.243-5 5-5h14v2h-14c-1.654 0-3 1.346-3 3zm21-12v2h-2v-2zm4 2h-2v-2h2z"
+                  fill="url(#SVGID_1_)" />
+              </svg>
+            </div>
+            <div class="card-subject">
+              <h2>Agências</h2>
+              <p>Procuram oferecer aplicações valiosas para otimizar e impulsionar suas operações.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="image-container">
+              <svg viewBox="0 0 512 512">
+                <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="37.025" x2="540.507" y1="478.975" y2="-24.507"
+                  data-name="New Gradient Swatch 1">
+                  <stop offset="0" stop-color="#fff3eb" />
+                  <stop offset="1" stop-color="#1f0100" />
+                </linearGradient>
+                <linearGradient id="b" x1="95.025" x2="598.507" xlink:href="#a" y1="536.975" y2="33.493"></linearGradient>
+                <linearGradient id="c" x1="67.025" x2="570.507" xlink:href="#a" y1="508.975" y2="5.493"></linearGradient>
+                <linearGradient id="d" x1="123.025" x2="626.507" xlink:href="#a" y1="564.975" y2="61.493"></linearGradient>
+                <linearGradient id="f" x1="39.025" x2="542.507" xlink:href="#a" y1="480.975" y2="-22.507"></linearGradient>
+                <linearGradient id="h" x1="-88.975" x2="414.507" xlink:href="#a" y1="352.975" y2="-150.507"></linearGradient>
+                <linearGradient id="i" x1="-60.975" x2="442.507" xlink:href="#a" y1="380.975" y2="-122.507"></linearGradient>
+                <linearGradient id="j" x1="-32.975" x2="470.507" xlink:href="#a" y1="408.975" y2="-94.507"></linearGradient>
+                <linearGradient id="k" x1="-24.975" x2="478.507" xlink:href="#a" y1="416.975" y2="-86.507"></linearGradient>
+                <linearGradient id="l" x1="3.025" x2="506.507" xlink:href="#a" y1="444.975" y2="-58.507"></linearGradient>
+                <linearGradient id="m" x1="159.025" x2="662.507" xlink:href="#a" y1="600.975" y2="97.493"></linearGradient>
+                <g>
+                  <path
+                    d="m496 464h-16v-264a8 8 0 0 0 -8-8h-24v-40a8 8 0 0 0 -8-8h-48v-48a8 8 0 0 0 -16 0v48h-48a8 8 0 0 0 -8 8v40h-24a8 8 0 0 0 -8 8v72h-32v-224h8a8 8 0 0 0 8-8v-24a8 8 0 0 0 -8-8h-240a8 8 0 0 0 -8 8v24a8 8 0 0 0 8 8h8v416h-16a8 8 0 0 0 -8 8v24a8 8 0 0 0 8 8h480a8 8 0 0 0 8-8v-24a8 8 0 0 0 -8-8zm-160-304h96v32h-96zm-32 48h160v256h-104v-184a8 8 0 0 0 -8-8h-48zm40 80v176h-40v-48a8 8 0 0 0 -8-8h-80a8 8 0 0 0 -8 8v48h-40v-176zm-56 136v40h-64v-40zm-128-152a8 8 0 0 0 -8 8v184h-104v-416h192v224zm-128-248h224v8h-224zm456 464h-464v-8h464z"
+                    fill="url(#a)"></path>
+                  <path d="m272 352h-32a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8zm-8 32h-16v-16h16z"
+                    fill="url(#b)"></path>
+                  <path d="m216 352h-32a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8zm-8 32h-16v-16h16z"
+                    fill="url(#c)"></path>
+                  <path d="m336 392v-32a8 8 0 0 0 -8-8h-32a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8zm-16-8h-16v-16h16z"
+                    fill="url(#d)"></path>
+                  <path d="m272 296h-32a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8zm-8 32h-16v-16h16z"
+                    fill="url(#c)"></path>
+                  <path d="m216 296h-32a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8zm-8 32h-16v-16h16z"
+                    fill="url(#f)"></path>
+                  <path d="m296 344h32a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8h-32a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8zm8-32h16v16h-16z"
+                    fill="url(#b)"></path>
+                  <path d="m72 144h144a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8h-144a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8zm8-32h128v16h-128z"
+                    fill="url(#h)"></path>
+                  <path d="m72 200h144a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8h-144a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8zm8-32h128v16h-128z"
+                    fill="url(#i)"></path>
+                  <path d="m72 256h144a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8h-144a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8zm8-32h128v16h-128z"
+                    fill="url(#j)"></path>
+                  <path d="m136 264h-64a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8zm-8 32h-48v-16h48z"
+                    fill="url(#k)"></path>
+                  <path d="m136 320h-64a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8zm-8 32h-48v-16h48z"
+                    fill="url(#l)"></path>
+                  <path d="m408 448h32a8 8 0 0 0 8-8v-208a8 8 0 0 0 -8-8h-32a8 8 0 0 0 -8 8v208a8 8 0 0 0 8 8zm8-208h16v192h-16z"
+                    fill="url(#m)"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-subject">
+              <h2>Organizações e startups</h2>
+              <p>Precisam de soluções inovadoras que suportem o crescimento, contribuam para suas operações e auxiliem na tomada de decisão.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="image-container">
+              <svg viewBox="0 0 512 512">
+                <linearGradient id="SVGID_1_">
+                  <stop offset="0" stop-color="#fff3eb" />
+                  <stop offset="1" stop-color="#1f0100" />
+                </linearGradient>
+                <path
+                  d="m303.196 374.403h-20.893v-14.965c16.188-12.056 24.718-34.919 24.718-56.837v-11.963c0-28.118-22.888-50.993-51.021-50.993-28.134 0-51.022 22.875-51.022 50.993v11.963c0 14.687 4.282 30.399 11.456 42.033 3.776 6.124 8.235 11.073 13.263 14.836v14.933h-20.893c-29.884 0-54.196 22.8-54.196 50.824v71.773c0 3.866 3.134 7 7 7h188.786c3.866 0 7-3.134 7-7v-71.772c-.001-28.025-24.313-50.825-54.198-50.825zm-38.399 73.823-8.638 15.395-8.946-15.447 8.787-49.184zm-8.797-194.58c13.244 0 24.88 6.99 31.424 17.467-7.799 4.646-18.281 4.759-30.193 4.883-11.842.124-24.853.265-37.051 5.285 4.16-15.882 18.641-27.635 35.82-27.635zm-37.022 48.956v-4.903c11.125-7.408 24.4-7.559 38.399-7.705 12.085-.125 24.504-.256 35.093-5.675.356 2.055.552 4.164.552 6.319v11.963c0 19.903-10.051 51.479-37.021 51.479s-37.023-31.575-37.023-51.478zm24.718 63.813c3.897 1.095 8.004 1.665 12.304 1.665 4.371 0 8.469-.602 12.304-1.693v8.017h-24.607v-7.989zm99.697 123.585h-24.522v-46.121c0-3.866-3.134-7-7-7s-7 3.134-7 7v46.121h-97.713v-46.121c0-3.866-3.134-7-7-7s-7 3.134-7 7v46.121h-24.551v-64.772c0-20.305 18.032-36.824 40.196-36.824h34.867l-10.69 59.829c-.291 1.629.004 3.308.833 4.739l16.384 28.289c1.252 2.163 3.561 3.492 6.058 3.492h.047c2.515-.018 4.827-1.382 6.057-3.574l15.874-28.289c.793-1.415 1.072-3.061.786-4.657l-10.689-59.829h34.866c22.165 0 40.197 16.52 40.197 36.824zm-212.627-317.081h-82.913c-1.856 0-3.637.737-4.95 2.051l-32.853 32.852c-1.313 1.313-2.05 3.094-2.05 4.95v131.158c0 3.866 3.134 7 7 7h115.766c3.866 0 7-3.134 7-7v-164.011c0-3.866-3.134-7-7-7zm-89.913 23.899v8.954h-8.954zm82.913 140.112h-101.766v-117.158h25.853c3.866 0 7-3.134 7-7v-25.854h68.913zm-82.064-74.04h62.362c3.866 0 7 3.134 7 7s-3.134 7-7 7h-62.362c-3.866 0-7-3.134-7-7s3.134-7 7-7zm24.35-24.945c3.866 0 7 3.134 7 7s-3.134 7-7 7h-24.35c-3.866 0-7-3.134-7-7s3.134-7 7-7zm45.012 56.889c0 3.866-3.134 7-7 7h-62.362c-3.866 0-7-3.134-7-7s3.134-7 7-7h62.362c3.866 0 7 3.134 7 7zm385.936-121.915h-82.885c-1.856 0-3.637.737-4.95 2.051l-32.853 32.853c-1.313 1.313-2.05 3.094-2.05 4.95v131.157c0 3.866 3.134 7 7 7h115.738c3.866 0 7-3.134 7-7v-164.011c0-3.866-3.134-7-7-7zm-89.885 23.899v8.954h-8.954zm82.885 140.112h-101.738v-117.158h25.853c3.866 0 7-3.134 7-7v-25.854h68.885zm-82.036-74.04h62.333c3.866 0 7 3.134 7 7s-3.134 7-7 7h-62.333c-3.866 0-7-3.134-7-7s3.134-7 7-7zm24.322-24.945c3.866 0 7 3.134 7 7s-3.134 7-7 7h-24.321c-3.866 0-7-3.134-7-7s3.134-7 7-7zm45.012 56.889c0 3.866-3.134 7-7 7h-62.333c-3.866 0-7-3.134-7-7s3.134-7 7-7h62.333c3.866 0 7 3.134 7 7zm-279.153-108.851h115.738c3.866 0 7-3.134 7-7v-163.983c0-3.866-3.134-7-7-7h-82.913c-1.857 0-3.639.738-4.952 2.053l-32.825 32.854c-1.312 1.312-2.048 3.092-2.048 4.947v131.13c0 3.866 3.134 6.999 7 6.999zm108.738-14h-101.738v-117.129h25.825c3.866 0 7-3.134 7-7v-25.854h68.913zm-91.849-131.129 8.936-8.944v8.944zm34.134 32.172c3.866 0 7 3.134 7 7s-3.134 7-7 7h-24.35c-3.866 0-7-3.134-7-7s3.134-7 7-7zm-24.349 24.945h62.362c3.866 0 7 3.134 7 7s-3.134 7-7 7h-62.362c-3.866 0-7-3.134-7-7s3.134-7 7-7zm69.362 31.945c0 3.866-3.134 7-7 7h-62.362c-3.866 0-7-3.134-7-7s3.134-7 7-7h62.362c3.866 0 7 3.134 7 7zm-200.068 303.759c0 3.866-3.134 7-7 7h-14.23c-3.866 0-7-3.134-7-7v-14.23c0-3.866 3.134-7 7-7s7 3.134 7 7v7.23h7.23c3.866 0 7 3.134 7 7zm-28.23-36.142v-15.846c0-3.866 3.134-7 7-7s7 3.134 7 7v15.846c0 3.866-3.134 7-7 7s-7-3.134-7-7zm65.987 36.142c0 3.866-3.134 7-7 7h-15.846c-3.866 0-7-3.134-7-7s3.134-7 7-7h15.846c3.866 0 7 3.134 7 7zm-65.987-329.271v-14.258c0-3.866 3.134-7 7-7h14.23c3.866 0 7 3.134 7 7s-3.134 7-7 7h-7.23v7.258c0 3.866-3.134 7-7 7s-7-3.133-7-7zm0 37.757v-15.846c0-3.866 3.134-7 7-7s7 3.134 7 7v15.846c0 3.866-3.134 7-7 7s-7-3.134-7-7zm36.141-52.015c0-3.866 3.134-7 7-7h15.846c3.866 0 7 3.134 7 7s-3.134 7-7 7h-15.846c-3.866 0-7-3.133-7-7zm60.632 7h-15.846c-3.866 0-7-3.134-7-7s3.134-7 7-7h15.846c3.866 0 7 3.134 7 7s-3.134 7-7 7zm283.489 322.298v14.23c0 3.866-3.134 7-7 7h-14.258c-3.866 0-7-3.134-7-7s3.134-7 7-7h7.258v-7.23c0-3.866 3.134-7 7-7s7 3.134 7 7zm0-37.756v15.846c0 3.866-3.134 7-7 7s-7-3.134-7-7v-15.846c0-3.866 3.134-7 7-7s7 3.133 7 7zm-36.17 51.987c0 3.866-3.134 7-7 7h-15.845c-3.866 0-7-3.134-7-7s3.134-7 7-7h15.845c3.866 0 7 3.134 7 7zm7.912-343.529c0-3.866 3.134-7 7-7h14.258c3.866 0 7 3.134 7 7v14.258c0 3.866-3.134 7-7 7s-7-3.134-7-7v-7.258h-7.258c-3.866 0-7-3.133-7-7zm28.258 36.169v15.846c0 3.866-3.134 7-7 7s-7-3.134-7-7v-15.846c0-3.866 3.134-7 7-7s7 3.134 7 7zm-66.015-36.169c0-3.866 3.134-7 7-7h15.845c3.866 0 7 3.134 7 7s-3.134 7-7 7h-15.845c-3.866 0-7-3.133-7-7zm-7.912 0c0 3.866-3.134 7-7 7h-15.846c-3.866 0-7-3.134-7-7s3.134-7 7-7h15.846c3.866 0 7 3.134 7 7z"
+                  fill="url(#SVGID_1_)" />
+              </svg>
+            </div>
+            <div class="card-subject">
+              <h2>Consultores de Tecnologia</h2>
+              <p>Buscam mão de obra terceirizada para oferecer aplicações de qualidade e melhor atender seus clientes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image-column">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <ul>
+      <li>
+        <a target="_blank" href="https://api.whatsapp.com/send/?phone=5519984222461&type=phone_number&app_absent=0">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>(19) 98422-2461</span>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.instagram.com/vinisferrari/">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/vinisferrari">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.linkedin.com/in/vinisferrari">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="mailto:viniciusferrari.silva@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>E-mail</span>
+        </a>
+      </li>
+    </ul>
+    <div class="container">
+      <span class="paragraph">Desenvolvido por: Vinícius Ferrari Silva</span>
+      <span class="paragraph">Copyright © - Todos os direitos reservados</span>
+    </div>
+  </footer>
+
+</body>
+
+</html>
