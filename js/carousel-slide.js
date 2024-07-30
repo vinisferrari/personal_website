@@ -117,4 +117,61 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+  //logica para expandir as imagens do carousel ao clicar
+
+
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.getElementsByClassName("close")[0];
+  const slides = document.querySelectorAll(".carousel .slide");
+
+  let isMouseDown = false;
+  let startX, startY, startTime;
+
+  slides.forEach((slide) => {
+    slide.addEventListener("mousedown", function (event) {
+      isMouseDown = true;
+      startX = event.clientX;
+      startY = event.clientY;
+      startTime = new Date().getTime();
+    });
+
+    slide.addEventListener("mouseup", function (event) {
+      if (isMouseDown) {
+        const endX = event.clientX;
+        const endY = event.clientY;
+        const endTime = new Date().getTime();
+
+        const deltaX = endX - startX;
+        const deltaY = endY - startY;
+        const deltaTime = endTime - startTime;
+
+        if (Math.abs(deltaX) < 5 && Math.abs(deltaY) < 5 && deltaTime < 200) {
+          const img = slide.querySelector("img");
+          if (img) {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+          }
+        }
+
+        isMouseDown = false;
+      }
+    });
+
+    slide.addEventListener("mouseleave", function () {
+      isMouseDown = false;
+    });
+  });
+
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
 });

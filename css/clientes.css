@@ -15,7 +15,7 @@
     top: 0;
     width: 100%;
     bottom: 0;
-    background-image: url(/Design/backgorund_image/Section_clientes_background.jpg);
+    background-image: url(/Design/background_image/Section_clientes_background.jpg);
     background-position: right center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,10 +63,6 @@
     /* width: calc(50% - 2vw); */
     align-items: center;
     width: 60%;
-}
-
-.clientes .card-column, .clientes .image-column {
-    /* flex: 1; */
 }
 
 .clientes .card {

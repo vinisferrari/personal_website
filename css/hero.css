@@ -11,7 +11,7 @@
   justify-content: center;
   /* align-items: center; */
   width: 100%;
-  background-image: url(/Design/backgorund_image/hero.jpg);
+  background-image: url(/Design/background_image/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2vw 0;
@@ -24,10 +24,6 @@
   /* align-items: stretch; */
   width: 85vw;
   /* justify-content: center; */
-}
-
-.hero-image, .hero-text {
-  /* flex: 1; */
 }
 
 .hero-image{
@@ -197,7 +193,7 @@
     content: "";
     width: 100vw;
     height: 50vw;
-    background-image: url(/Design/backgorund_image/hero-mobile.jpg);
+    background-image: url(/Design/background_image/hero-mobile.jpg);
     background-size:cover;
     background-repeat: no-repeat;
   }
