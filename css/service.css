@@ -24,7 +24,7 @@
 
 .servicos h1{
     color: #FFF;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
     margin-bottom: clamp(10px, 1vw, 30px);
     opacity: 1;

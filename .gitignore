@@ -1,1 +1,5 @@
+/.git
 /recursos ocultos
+/pacote.json
+/sandbox.config.json
+/.gitignore

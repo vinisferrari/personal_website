@@ -38,7 +38,7 @@
 
 .skills-experience h2 {
   color: #FFF;
-  font-size: clamp(20px, 3vw, 36px);
+  font-size: 1em;
   text-align: center;
   margin-bottom: clamp(10px, 1vw, 30px)
 }
@@ -156,5 +156,8 @@
 @media(min-width: 480px){
   .skills-grid, .experience-grid{
     gap: 1vw
+  }
+  .skills-experience h2 {
+    font-size: 1.2em;
   }
 }

@@ -40,35 +40,34 @@ document.addEventListener('DOMContentLoaded', () => {
   let startX;
   let scrollLeft; 
 
-  wrapper.addEventListener('mousedown', (e) => {
+  wrapper.addEventListener('mousedown', function(e) {
     isDown = true;
     startX = e.pageX - wrapper.offsetLeft;
     scrollLeft = wrapper.scrollLeft;
     wrapper.classList.add('active');
+    contadorMouse = 2;
   });
 
-  wrapper.addEventListener('mouseleave', () => {
+  wrapper.addEventListener('mouseleave', function() {
     isDown = false;
     wrapper.classList.remove('active');
   });
 
-  wrapper.addEventListener('mouseup', () => {
+  wrapper.addEventListener('mouseup', function () {
     isDown = false;
     wrapper.classList.remove('active');
   });
 
-  wrapper.addEventListener('mousemove', (e) => {
+  wrapper.addEventListener('mousemove', function(e) {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - wrapper.offsetLeft;
     const walk = (x - startX) * 1; // Ajuste a velocidade de deslocamento
     wrapper.scrollLeft = scrollLeft - walk;
   });
-});
 
-// Logica carousel/slide
+  // -------- Logica carousel/slide
 
-document.addEventListener('DOMContentLoaded', function() {
   const carousels = document.querySelectorAll('.carousel');
 
   carousels.forEach((carousel) => {
@@ -127,43 +126,68 @@ document.addEventListener('DOMContentLoaded', function() {
   const slides = document.querySelectorAll(".carousel .slide");
 
   let isMouseDown = false;
-  let startX, startY, startTime;
+  let startEixoX, startY, startTime, isLeftButton;
 
-  slides.forEach((slide) => {
-    slide.addEventListener("mousedown", function (event) {
-      isMouseDown = true;
-      startX = event.clientX;
-      startY = event.clientY;
-      startTime = new Date().getTime();
-    });
+  // função simples que pode ajudar a determinar se um dispositivo suporta eventos de toque
 
-    slide.addEventListener("mouseup", function (event) {
-      if (isMouseDown) {
-        const endX = event.clientX;
-        const endY = event.clientY;
-        const endTime = new Date().getTime();
+  function isTouchDevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+  }
 
-        const deltaX = endX - startX;
-        const deltaY = endY - startY;
-        const deltaTime = endTime - startTime;
+  // Função para iniciar o clique/toque
+  function startInteraction(event) {
+    if (isTouchDevice() && contadorMouse != 2) return;
+        // Verifica se é um toque ou o botão esquerdo do mouse
+    if (event.type === "mousedown" && event.button !== 0) return;
+    isMouseDown = true;
+    isLeftButton = event.button === 0;
+    const touch = event.touches ? event.touches[0] : event;
+    startEixoX = touch.clientX;
+    startY = touch.clientY;
+    startTime = new Date().getTime();
+  }
 
-        if (Math.abs(deltaX) < 5 && Math.abs(deltaY) < 5 && deltaTime < 200) {
-          const img = slide.querySelector("img");
-          if (img) {
-            modal.style.display = "block";
-            modalImg.src = img.src;
-          }
+  // Função para finalizar o clique/toque
+  function endInteraction(event) {
+    if (isMouseDown) {
+      // Verifica se é um toque ou o botão esquerdo do mouse
+      if (event.type === "mouseup" && !isLeftButton) return;
+
+      const touch = event.changedTouches ? event.changedTouches[0] : event;
+      const endX = touch.clientX;
+      const endY = touch.clientY;
+      const endTime = new Date().getTime();
+
+      const deltaX = endX - startEixoX;
+      const deltaY = endY - startY;
+      const deltaTime = endTime - startTime;
+
+      if (Math.abs(deltaX) < 5 && Math.abs(deltaY) < 5 && deltaTime < 200) {
+        const img = event.currentTarget.querySelector("img");
+        if (img) {
+          modal.style.display = "block";
+          modalImg.src = img.src;
         }
-
-        isMouseDown = false;
       }
-    });
 
-    slide.addEventListener("mouseleave", function () {
+      isMouseDown = false;
+    }
+  }
+
+  // Adicionar eventos de mouse
+  slides.forEach((slide) => {
+    slide.addEventListener("mousedown", startInteraction);
+    slide.addEventListener("mouseup", endInteraction);
+    slide.addEventListener("mouseleave", () => {
       isMouseDown = false;
     });
+
+    slide.addEventListener("touchstart", startInteraction);
+    slide.addEventListener("touchend", endInteraction);
+
   });
 
+  // Evento de fechar o modal
   closeBtn.addEventListener("click", function () {
     modal.style.display = "none";
   });
@@ -173,5 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
       modal.style.display = "none";
     }
   });
+
+
 
 });
