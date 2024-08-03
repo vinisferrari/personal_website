@@ -1,6 +1,5 @@
 /.git
-/recursos ocultos/*
-!/recursos ocultos/effects/index2.html
+/recursos ocultos
 /pacote.json
 /sandbox.config.json
 /.gitignore

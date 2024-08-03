@@ -1,0 +1,81 @@
+.container-effect-text {
+    font-size: clamp(16px, 0.4em, 28px);
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85vw;
+  }
+
+  .container-effect-text .effect-container {
+    display: flex;
+    font-family: 'Red Hat Display', sans-serif;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .container-effect-text .typing-text span,
+  .container-effect-text .reveal-text {
+    overflow: hidden;
+  }
+
+  .container-effect-text .typing-text {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .container-effect-text .typing-text span {
+    color: white;
+    border-right: 2px solid white; /* Cursor effect */
+    animation: typing 4s steps(40, end) forwards, blink-caret 0.75s step-end infinite; /* Animation for typing effect and blinking cursor */
+    transition: color 1s ease-in-out;
+  }
+
+  .container-effect-text .container-text2 {
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+  }
+
+  .container-effect-text .reveal-text {
+    display: flex;
+    font-size: clamp(22px, 1.5em, 34px);
+    align-items: center;
+    height: 100%;
+    color: #ff2100; /* Text color for revealed text */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.8s ease-in-out; /* Smooth reveal transition */
+  }
+
+  .container-effect-text .reveal-background {
+    background-color: #ff2100; /* Background color for reveal effect */
+    height: 100%; /* Full height of the container */
+    width: 0%; /* Start with 0% width */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0%); /* Initial position */
+    transition: width 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition for width and transform */
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 16ch; /* Adjust to fit the text length */
+    }
+  }
+
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent; /* Invisible caret */
+    }
+    50% {
+      border-color: white; /* Visible caret */
+    }
+  }

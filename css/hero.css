@@ -9,12 +9,13 @@
 .hero-conteiner {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   width: 100%;
   background-image: url(/Design/background_image/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 2vw 0;
+  padding: 2vw 0 2vw 0;
+  flex-direction: column;
 }
 
 .hero-content {
@@ -54,7 +55,7 @@
   text-align: justify;
 }
 
-.hero-text span {
+.hero-text .name-text {
   background: linear-gradient(140deg, #fff3eb, #d71000);
   background-clip: text;
   color: transparent;
@@ -176,12 +177,6 @@
 .icon-container a:hover {
   color: #aa0d02;
 }
-
-/* @media (max-width: 1200px) {
-  .hero-conteiner {
-    background-position: -8vw 0%;
-  }
-} */
 
 @media(max-width:710px){
   .hero-conteiner{
