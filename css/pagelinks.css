@@ -31,7 +31,7 @@ body, html {
 }
 
 .hero {
-    background-image: url('../design/background_image/pagelinks.jpg');
+    background-image: url(../design/background_image/pagelinks.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
