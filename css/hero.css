@@ -188,7 +188,7 @@
     content: "";
     width: 100vw;
     height: 50vw;
-    background-image: url(/design/background_image/hero-mobile.jpg);
+    background-image: url('/design/background_image/hero-mobile.jpg');
     background-size:cover;
     background-repeat: no-repeat;
   }
