@@ -16,7 +16,7 @@
     top: 0;
     width: 100%;
     bottom: 0;
-    background-image: url(/design/background_image/Section_clientes_background.jpg);
+    background-image: url('../design/background_image/Section_clientes_background.jpg');
     background-position: right center;
     background-size: cover;
     background-repeat: no-repeat;

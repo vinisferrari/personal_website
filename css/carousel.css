@@ -10,7 +10,7 @@
 }
 
 .section-portfolio .background-image{
-  background-image: url(/design/background_image/portfolio.jpg);
+  background-image: url('../design/background_image/portfolio.jpg');
   background-position: center center;
   background-size: cover;
   position: absolute;

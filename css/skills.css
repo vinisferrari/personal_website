@@ -18,7 +18,7 @@
   top: 0;
   width: 100%;
   bottom: 0;
-  background-image: url(/design/background_image/section_skills.jpg);
+  background-image: url('../design/background_image/section_skills.jpg');
   background-position: center center;
   background-size: cover;
   opacity: 0.5;

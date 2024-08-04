@@ -20,27 +20,22 @@
 
 .hero-content {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   flex-wrap: nowrap;
-  /* align-items: stretch; */
   width: 85vw;
-  /* justify-content: center; */
 }
 
 .hero-image{
-  /* display: flex; */
   justify-content: center;
   align-items: center;
-  /* width: calc(50% - 2vw); */
   width: 55%;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  /* padding: 2vw; */
+  padding: 2vw;
   color: #fff;
-  /* align-items: center; */
   width: 45%;
   font-size: clamp(22px,2.9vw,46px);
 }
@@ -199,7 +194,7 @@
   
   .hero-text{
     width: 100%;
-    padding: 3vw;
+    padding: 3vw 0;
   }
 
   .hero-image img{
