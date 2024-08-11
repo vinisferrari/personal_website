@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Seleciona todos os elementos com a classe 'card' dentro da seção 'servicos'
     const cards = document.querySelectorAll('.no-drawer nav ul li');
-    console.log(cards);
 
     // Adiciona evento de mouse para cada card
     cards.forEach(card => {

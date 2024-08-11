@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    justify-content: center;
   }
 
   .container-effect-text .typing-text span {
@@ -77,5 +78,11 @@
     }
     50% {
       border-color: white; /* Visible caret */
+    }
+  }
+
+  @media (max-width: 424px) {
+    .container-effect-text .effect-container {
+      flex-direction: column;
     }
   }
