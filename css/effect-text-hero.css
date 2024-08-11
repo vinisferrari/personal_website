@@ -81,7 +81,7 @@
     }
   }
 
-  @media (max-width: 424px) {
+  @media (max-width: 450px) {
     .container-effect-text .effect-container {
       flex-direction: column;
     }
