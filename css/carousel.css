@@ -104,13 +104,34 @@
   overflow-x: auto;
   gap: clamp(10px, 1vw, 40px);
   width: 100%;
-  scrollbar-width: none; /* Firefox */
+  /* scrollbar-width: none; Firefox */
   cursor: pointer;
   user-select: none;
+  padding-bottom: 20px;
 }
 
 .wrapper::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  /* display: none; Chrome, Safari, Opera */
+}
+
+/* Estilos para personalizar a barra de rolagem */
+.wrapper::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background: #1b1b1b; /* Cor do trilho */
+  border-radius: 10px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: #ff3f00; /* Cor do polegar */
+}
+
+/* Para Firefox */
+.wrapper {
+  scrollbar-width: 12px; /* Largura da barra de rolagem */
+  scrollbar-color: #ff3f00 #1b1b1b; /* Cor do polegar e do trilho */
 }
 
 .section-projeto {
@@ -186,7 +207,7 @@
   padding: clamp(4px,0.7vw,10px);
   cursor: pointer;
   z-index: 1;
-  border-radius: 0.5vw;
+  border-radius: 50%;
   font-size: 0.7em;
 }
 
@@ -224,7 +245,7 @@
 .fade-left, .fade-right {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 20px;
   width: clamp(8px, 8vw, 50px);
   pointer-events: none;
   z-index: 1;
@@ -260,11 +281,11 @@
 .section-portfolio .all-portfolio a p {
   font-size: clamp(14px,0.5em, 20px);
   transition: color 0.5s ease;
+  animation: pulse 1s ease infinite;
 }
 
 .section-portfolio .all-portfolio a:hover p {
-  animation: pulse 1s ease infinite;
-  color: #FFF;
+  color: #ff6826;
 }
 
 @keyframes pulse {
