@@ -110,10 +110,6 @@
   padding-bottom: 20px;
 }
 
-.wrapper::-webkit-scrollbar {
-  /* display: none; Chrome, Safari, Opera */
-}
-
 /* Estilos para personalizar a barra de rolagem */
 .wrapper::-webkit-scrollbar {
   width: 12px; /* Largura da barra de rolagem */
