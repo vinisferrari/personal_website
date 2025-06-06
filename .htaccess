@@ -1,4 +1,12 @@
 RewriteEngine On
+
+# Se não for um arquivo ou diretório real
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+
+# Se houver um arquivo .pdf correspondente, servir ele
+RewriteCond %{DOCUMENT_ROOT}/pages/$1.pdf -f
+RewriteRule ^pages/([^.]+)$ /pages/$1.pdf [L]
+
+# Senão, servir .html
 RewriteRule ^pages/([^.]+)$ /pages/$1.html [L]
